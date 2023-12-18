@@ -1,0 +1,275 @@
+/* testing fade in animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body, .code .draw {
+    animation: fadeIn .5s ease-in-out;
+    animation-iteration-count: 1; 
+}
+
+body {
+    font-family: 'Alice', sans-serif;
+    color: white;
+    background-image: url("bg.png");
+    background-size: 100% 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+
+}
+
+/* the part for my header */
+.header {
+    display: block; /* Set as a block-level element */
+    padding: 0px 0px 10px 0px ;
+    text-align: center;
+    background-color: #DF949D;
+    color: white;
+    font-size: 25px;
+    background-image: url("header.png");
+    background-size: 100% 100%;
+
+}
+
+h1 {
+    font-family: 'Shrikhand', serif;
+    display: inline;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+p {
+    display: inline;
+}
+
+a {
+    font-size: 24px;
+    color: white;
+}
+
+/* big hey im anne text */
+.inline-header {
+    display: inline;
+    font-size: 40px; 
+    font-weight: bold;
+}
+
+.about-me {
+    display: flex; /* Use flexbox layout to align image and text */
+    align-items: center; /* Vertically align content */
+    text-align: left; /* align text center */
+    font-size: 25px;
+    padding: 120px 100px 25px 100px ;
+}
+
+.about-me img {
+
+    width: 350px; /* Adjust image width as needed */
+    height: 350px; /* Maintain aspect ratio */
+    object-fit: cover;
+    margin-right: 75px; /* Add spacing between image and text */
+}
+
+.about-me p {
+    width: 70%; /* Adjust text width as needed */
+}
+
+p .smallgif {
+    padding-left: 20px;
+    width: 75px;
+    height: auto;
+}
+
+/* buttons */
+
+.style-buttons {
+    padding: 10px ;
+    cursor: pointer;
+    border-radius: 18px;
+    font-size: 20px;
+    font-family: 'Shrikhand';
+    margin-inline-start: 30px;
+    transition: opacity 0.15s;
+    color: white;
+}
+
+.style-buttons:hover {
+    opacity: 0.8;
+  }
+
+.style-buttons:active {
+    opacity:0.4;
+}
+
+.pink {
+    background-color: #DF949D;
+    border: 2px solid rgb(178, 87, 105);
+}
+
+.green {
+    background-color: #97976A;
+    border: 2px solid rgb(50, 77, 50);
+}
+
+.orange {
+    background-color: #ffba7e;
+    border: 2px solid rgb(227, 149, 22);
+}
+
+/* scroll to top button  */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+
+/* code section */
+
+.code {
+    padding: 100px 100px 50px 100px ;
+}
+.code p {
+    font-size: 25px;
+}
+.code h1 {
+    font-size: 50px;
+}
+
+/* slideshow for displaying coding */
+
+/* this code stores the arrow bars */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    padding: 50px 75px;
+    height: 400px;
+  }
+
+/* this deals with everything inside the arrows */
+.codeslideshow {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+  /* Next & previous buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0px 3px 3px 0px;
+    user-select: none;
+    cursor: pointer;
+
+    }
+
+.prev {
+    left: 25px;
+    border-radius: 3px 0 0px 3px;
+  }
+  
+.next {
+    right: 25px;
+    border-radius: 3px 0 0px 3px;
+}
+
+.mySlides {
+    flex: 0 0 100%;
+    display: none;
+  }
+
+/* programming slide text */
+
+.slide-text {
+    flex: 60%;
+    text-align: left;
+}
+
+.slide-content {
+    display: flex;
+}
+
+.slide-image {
+    flex: 80%;
+    margin: 0 25px;
+}
+
+.slide-image img {
+    width: 100%;
+    height: 400px;
+}
+
+/* art drawing section */
+.draw {
+    padding: 100px 100px 25px 100px ; 
+}
+
+.draw p {
+    font-size: 25px;
+}
+.draw h1 {
+    font-size: 50px;
+}
+
+.draw {
+    padding: 100px 0px 0px 0px;
+}
+
+
+/* images row and column */
+
+.row {
+    display: flex;
+    padding: 15px;
+}
+
+.column {
+    flex: 30%;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 15px;
+}
+
+
+/* about me section that doesnt exist right now */
+.me h1 {
+    font-size: 50px;
+}
+.me {
+    padding: 100px 100px 25px 100px ;
+}
+.me p {
+    font-size: 25px;
+}
