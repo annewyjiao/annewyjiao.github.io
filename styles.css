@@ -246,7 +246,6 @@
     display: inline;
     align-items: center;
     justify-content: center;
-    height: 250px;
     width: 250px;
 }
 
@@ -277,6 +276,10 @@
     max-width: 100%;
     color: #555;
     line-height: 1.2;
+}
+
+#education {
+    background: rgba(255, 0, 0, 0.1);
 }
 
 /* <!-- ======================= -->
