@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* <!-- ======================= -->
+<!--           HEADER           -->
+<!-- ========================== --> */
+/* Style the header with a grey background and some padding */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* Keeps it on top */
+}
+
+.sticky-header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* <!-- ======================= -->
+<!--          INTRO PAGE          -->
+<!-- ========================== --> */
+/* main page section */
+.main-page img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.main-page {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 100px;
+
+}
+.overlay {
+    position: absolute;
+    top: 55%;  /* Move down */
+    right: 17%; /* Adjust horizontally if needed */
+    transform: translateY(-50%); /* Optional: vertically center relative to top offset */
+    color: white;
+    font-size: 4vw; /* Responsive font size */
+    font-weight: bold;
+    z-index: 10;
+}
+
+.rest-of-the-site {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 5vw;
+    max-width: 1200px;
+}
+
+/* <!-- ======================= -->
+<!--          ABOUT ME          -->
+<!-- ========================== --> */
+.about-me-container {
+    display: flex;
+}
+.about-me-img {
+    display: inline;
+    width: 40%;
+    padding: 25px;
+}
+
+.about-me-img img{
+    display: inline;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.about-me-text {
+    text-align: left;
+    line-height: 150%;
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+/* <!-- ======================= -->
+<!--          Work exp          -->
+<!-- ========================== --> */
+.job-entry {
+    display: flex;
+    gap: 2em;
+}
+
+.company-logo {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.company-logo img {
+    max-width: 100%;
+    /* Allows image to shrink if smaller */
+    max-height: 100%;
+    /* Allows image to shrink if smaller */
+
+}
+
+.job-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4em;
+    justify-items: center;
+}
+
+.job-entry {
+    padding: 1em;
+}
+
+.job-information {
+    max-width: 35vw;
+    text-align: left;
+}
+
+.job-title {
+    font-size: x-large;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.4em;
+}
+
+.job-date {
+    font-weight: bold;
+    color: #007acc;
+    margin-bottom: 0.4em;
+}
+
+.job-description {
+    max-width: 100%;
+    color: #555;
+    line-height: 1.2;
+}
+
+/* <!-- ======================= -->
+<!--          Project           -->
+<!-- ========================== --> */
+.project-title {
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 2%;
+    color: #333;
+}
+
+.project-language {
+    font-weight: bold;
+    color: #007acc;
+    margin-bottom: 7%;
+}
+
+.project-description {
+    max-width: 100%;
+    text-align: center;
+    color: #555;
+    line-height: 1.2;
+}
+
+.project-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*create 3 columns*/
+    column-gap: 3em;
+    row-gap: 4em;
+    align-items: start;
+}
+
+/* <!-- ======================= -->
+<!--        Volunteer           -->
+<!-- ========================== --> */
+.volunteer-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3em;
+    row-gap: 4em;
+}
+
+.volunteer-entry {
+    align-items: center;
+    justify-content: center;
+}
+
+.volunteer-info {
+    padding: 13px;
+
+}
+
+.volunteer-title {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.volunteer-details {
+    font-weight: bold;
+    color: #007acc;
+    margin: 4%;
+}
+
+
+.volunteer-photo {
+    align-items: center;
+    height: 150px;
+}
+
+.volunteer-photo img {
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+}
+
+.volunteer-description {
+    max-width: 100%;
+    text-align: center;
+    color: #555;
+    line-height: 1.2;
+}
+
+/* <!-- ======================= -->
+<!--        Education           -->
+<!-- ========================== --> */
+.school-entry {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width: 50vw;
+    height: auto;
+}
+
+.school-img {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+}
+
+.school-img img {
+    width: 100%;
+    height: auto;
+}
+
+.school-info {
+    display: inline;
+    max-width: 100%;
+    text-align: left;
+}
+
+.degree {
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 0.4em;
+}
+
+.uni {
+    font-weight: bold;
+    color: #007acc;
+    
+}
+
+.school-details {
+    max-width: 100%;
+    color: #555;
+    line-height: 1.2;
+}
+
+/* <!-- ======================= -->
+<!--          fun          -->
+<!-- ========================== --> */
+.fav-animal-section {
+    padding-bottom: 100px;
+}
+
+.animal-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.animal-imgs img {
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+}
+
+section {
+    padding-bottom: 120px;
+    display: block;
+    align-items: center;
+}
+
+body {
+    font-family: "League Spartan", serif;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4em;
+    padding-bottom: 40px;
+}
+
+footer {
+    padding: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Makes scrolling smoother */
+}

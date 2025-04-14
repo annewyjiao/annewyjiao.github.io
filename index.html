@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Shrikhand&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="rat.gif" type="image/gif">
+    <title>Anne Jiao's Portfolio</title>
+
+</head>
+
+<body>
+
+
+  <div class = "header">
+    <h1> ANNE'S STUDIO </h1> <br>
+
+    <p> Brushing Up on Art and Debugging My Life</p>
+  </div>
+
+  <div class = "home " id = "header">
+
+  
+  <button class = 'style-buttons' onClick = 'scroll2art()'>Design/Drawing</button>
+  <button class = 'style-buttons' onClick = 'scroll2code()'>Programming/Games </button>
+  <a href="https://github.com/annewyjiao/Anne-Resume/blob/2c849c1d5498ac5df0fa39eaeeac356218b57870/Anne%20Jiao%20Resume%20COOP.pdf" target = "_blank">
+    <button class = 'style-buttons' >Download My Resume</button>
+  </a>
+  </div>
+
+  <div class="about-me">
+    <img src="anne.jpg" alt="Photo of me!">
+    <p>
+      <span class = "inline-header">Hey! I'm Anne </span>  <img class = "smallgif" src="rat.gif" alt="Photo of me!"> <br> 
+
+      I am a Computing Science student at Simon Fraser University. 
+      But before that I was a kid video game addict, 
+      a middle schooler who was way too obsessed with Big Hero 6, and 
+      a confused teen who accidently signed up for a game jam. 
+      Now my goal in life is to create a little robot friend 
+      that listens to my problems. 
+      <br> <br>
+      This is my portfolio website
+      where I have examples of my work. Go check it out! <br><br>
+      
+    </p>
+  </div>
+
+
+  <div class = 'draw'>
+
+    <h1 id="arts">Art and Design</h1> <br>
+    <p>My kindergarten teacher telling me my drawing was good was my canon event</p>
+
+    <div class = "row">
+      <div class = "column">
+        <img src = "canva.gif" style = "width:100%">
+        <h2>Infographics</h2>
+        <p>Created infographics that discussed different movies and film techniques. 
+          Also created infographics for South Asian awarness.</p>
+      </div>
+
+      <div class = "column">
+        <img src = "cssmural.png" style = "width:100%">
+        <h2>CSSS Mural</h2>
+        <p>Designed the Computer Science Student Society Discord banner.</p>
+      </div>
+      
+      <div class = "column">
+        <img src = "divorce.gif" style = "width:100%">
+        <h2>Turning Over a New Leaf</h2>
+        <p>Drew the assets for hackathon team's video game about divorce.</p> <br> <br>
+        <a href = "https://youtu.be/BRYGOsXz5so?si=ickMiWsKwYyvJiew" target = "_blank">Link to Game Demo</a>
+      </div> 
+
+      <div class = "column">
+        <img src = "apart.gif" style = "width:100%">
+        <h2>AP 2D Art Portfolio</h2>
+        <p>Developed a 15 piece portfolio exploring climate change. Artwork was featured in the
+          West Vancouver Memorial Library. 
+        </p>
+      </div>     
+    </div>
+   
+    </div>
+
+  </div>
+
+  <br>
+
+  <div class = 'code'>
+
+    <h1 id ="program"> Programming and Video Games </h1> <br>
+    <p> I've always enjoyed watching others play video games so it's been a dream of mine to make my own </p> 
+
+    <div class="slideshow-container">
+      <div class = "codeslideshow">
+
+        <!-- slide for sea slingers -->
+        <div class="mySlides">  <!-- splits images into individual slides -->
+          <div class = "slide-content">
+            <div class = "slide-image">
+              <img src = "sea.gif">
+            </div>
+            <div class = "slide-text">
+              <span class = "inline-header">Sea Slingers</span> <br>
+              <p>I developed a 2-player fighting video game from concept to finish using Unity. I
+                implemented character abilities, character selection and multiplayer functions.</p>
+              <br> <br>
+              <a href = "https://annejiao.itch.io/sea-slingers" target = "_blank">Link to play Sea Slingers</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- slide for crumbs -->
+        <div class="mySlides">
+          <div class = "slide-content">
+            <div class = "slide-image">
+              <img src = "crumb.gif">
+            </div>
+            <div class = "slide-text">
+              <span class = "inline-header">Crumbs</span> <br>
+              <p>I made a platformer game using Python for PixelPad's 2021 March Break Game Jam.
+                I developed character assets, levels and story routes. 
+                The game was awarded Best Story and is one of the most played games on the site.
+              </p> <br> <br>
+              <a href = "https://pixelpad.io/app/xbpxzkacejs/" target = "_blank">Link to play Crumbs</a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- slide for blackfoot game -->
+        <div class="mySlides">
+          <div class = "slide-content">
+            <div class = "slide-image">
+              <img src = "foot.gif"">
+            </div>
+            <div class = "slide-text">
+              <span class = "inline-header">Blackfoot Learner</span> <br>
+              <p>
+                I developed a language learning application for the indigenous language Blackfoot.
+                This project was completed with a partner.
+                There are options to learn, play and change settings.
+              </p>
+              <a href = "https://replit.com/@niconii2/BlackFoot-Learning-Final" target = "_blank">
+              <br><br>
+                Link to the code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  
+  <script src = 'script.js'></script>
+
+</body>
+
+</html>
